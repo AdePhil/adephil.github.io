@@ -134,7 +134,20 @@ html {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1070px) {
+  html {
+    font-size: 58% !important;
+  }
+}
+
+@media (max-width: 910px) {
+  html {
+    font-size: 58% !important;
+  }
 }
 
 body {
@@ -487,6 +500,26 @@ h2 {
   font-size: 3rem;
 }
 
+@media (max-width: 920px) {
+  .banner-heading-text {
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-left: -15px;
+  }
+  .banner-description-text {
+    font-size: 1.6rem;
+  }
+  .banner-description-text:nth-child(3) {
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner-text {
+    padding-left: 70px;
+  }
+}
+
 @keyframes type {
   from {
     width: 0;
@@ -525,7 +558,6 @@ h2 {
   text-decoration: none;
   border: 2px solid #ffc600;
   background-color: #fff;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); */
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
   margin-bottom: 1em;
   transition: all 0.2s;
@@ -542,19 +574,13 @@ h2 {
 @media screen and (max-width: 1000px) {
   .project-container a {
     flex: 0 1 calc(50% - 0.5em);
-    /* margin-bottom: 1em; */
   }
 }
 
 @media screen and (max-width: 590px) {
   .project-container a {
     flex: 0 1 100%;
-    /* margin-bottom: 1em; */
   }
-}
-
-.project-container a:hover {
-  /* box-shadow: rgba(0, 0, 0, 0.3) 0 0 2px 2px; */
 }
 
 .project-container h3 {
@@ -641,7 +667,6 @@ h2 {
   width: 0%;
   height: 30px;
   background: linear-gradient(to right, #78d8ff 50%, #78d8ff 50%) repeat;
-  /*   cubic-bezier(.01,.91,.41,.81) ;*/
   transition: 0.9s all ease-in-out;
 }
 
@@ -695,10 +720,6 @@ h2 {
     font-size: 2rem;
     text-align: center;
   }
-  /* .project1 img,
-  .project3 img {
-    width: 200px;
-  } */
   .footer {
     font-size: 0.6rem;
   }
@@ -733,11 +754,6 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 2px 2px;
   transform: rotate(-1deg);
 }
-
-/* img.scaled {
-  min-width: 234px;
-  max-width: 100%;
-} */
 
 .text-about-me {
   padding: 0 3px;
@@ -808,7 +824,6 @@ h2 {
 }
 
 .personal-socials a:hover>.fa {
-  /*    color: rgba(29,161, 242,0.7);*/
   transform: scale(1.2) rotate(-3deg);
 }
 
